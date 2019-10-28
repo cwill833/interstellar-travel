@@ -23,6 +23,14 @@ func calculateFuel(planet string) int{
 	return fuel
 }
 
+func greetPlanet(planet string){
+	fmt.Printf("Welcome to %v", planet)
+}
+
+func cantFly(){
+	fmt.Println("We do not have the available fuel to fly there.")
+}
+
 func main(){
 	fmt.Println(calculateFuel("Mars"))
 	fuelGuage(100)
